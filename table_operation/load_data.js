@@ -12,7 +12,7 @@ AWS.config.update({
 var cvs = require('./py_cvs').cvs;
 var docClient = new AWS.DynamoDB.DocumentClient();
 
-lineReader.eachLine('out.txt',function(line,last){
+lineReader.eachLine('out2.txt',function(line,last){
     // console.log(line)
     let Table = 'rhyme';
     let Raw = line;
